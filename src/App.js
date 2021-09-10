@@ -3,13 +3,18 @@ import "./App.css";
 import PostCreate from "./PostCreate";
 import PostList from "./PostList";
 
+// children: PostCreate.js, PostList.js
+
 function App() {
 
+  // declare initial form state
   const initialFormState = {
     id: "",
     type: "Text",
     content: ""
   }
+
+  // declare all state variables for child components
 
   const [formData, setFormData] = useState( { ...initialFormState } )
 
