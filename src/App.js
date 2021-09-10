@@ -25,7 +25,7 @@ function App() {
   return (
 
     <div className="App">
-
+      {/* call in PostCreate.js to create posts */}
       <PostCreate 
       initialFormState={initialFormState} 
       formData={formData} 
@@ -35,7 +35,8 @@ function App() {
       posts={posts}
       setPosts={setPosts}
       />
-
+      
+      {/* call in PostList.js to display posts */}
       <PostList 
       type={type}
       posts={posts} 
